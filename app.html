@@ -13,8 +13,27 @@
 <body onresize="ajustaTamanhoDoJogo()">
     
 
+    <div class ="painel">
+
+        <div class ="vida">
+            <img id="c1" src="imagens/coracao_cheio.png" alt="coraçãoCheio" />
+            <img id="c2" src="imagens/coracao_cheio.png" alt="coraçãoCheio" /> 
+            <img id="c3" src="imagens/coracao_cheio.png" alt="coraçãoCheio" />
+
+        </div>
+
+        <div class = "cronometro">
+            Tempo restante: ?
+        </div>
+
+    </div>
+
     <script>
-        posicaoRandomica();
+        //setInterval responsavel por mostrar o elemento html(posicaoRandomica) a cada 1s
+        setInterval(function(){
+            posicaoRandomica();
+        }, 2000)
+        
     </script>
 
 </body>
